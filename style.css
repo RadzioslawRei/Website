@@ -38,6 +38,8 @@ nav{
     background: #fff;
     border-radius: 5px;
     transition: all .5s ease-in-out;
+    float: right;
+    cursor: pointer;
 }
 .hamburger::before,
 .hamburger::after{
@@ -64,4 +66,44 @@ nav{
 }
 .burger.open .hamburger::after{
     transform: rotate(-45deg) translate(35px, 35px);
+}
+.nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    transition: all .5s ease-in-out;
+    position: absolute;
+    opacity: 0;
+    transform: translate(-90%, -15px);
+}
+.nav-link{
+    text-decoration: none;
+    color:rgb(218, 218, 218);
+    margin-right: 100px;
+    font-size: 30px;
+}
+.nav-link:hover{
+    color: #838383;
+}
+main{
+    clear: both;
+    text-align: center;
+}
+.left, .right{
+    height: 800px;
+    width: 20%;
+    background-color: #242424;
+    display: flex;
+    float: left;
+}
+.middle{
+    height: 800px;
+    width: 60%;
+    display:-webkit-flex;
+    vertical-align: middle;
+    background-color:#181818;
+    float: left;
+    border-left: solid #4d4d4d 1px;
+    border-right: solid #4d4d4d 1px;
 }
