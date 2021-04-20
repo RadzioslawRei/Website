@@ -103,13 +103,13 @@ main{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .mename{
-    width: 100%;
+    max-width: 100px;
     height: 175px;
 }
 #iam{
     margin: 10px;
     width:146px;
-    max-height: 146px;
+    height: 146px;
     border-spacing: 1px;
     position: absolute;
     border: 5px solid #11a800;
@@ -120,8 +120,8 @@ main{
 .mename:hover #name{
     color: white;
     transform: translateX(100px);
-    width: 250px;
-    padding-left: 2.5rem;
+    width: 14rem;
+    padding-left: 2rem;
     transition: all .5s;
 }
 #name{
